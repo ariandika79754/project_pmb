@@ -1,0 +1,935 @@
+INFO - 2025-08-07 00:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:40:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:41:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:44:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:44:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:44:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:45:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:50:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:51:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:51:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:51:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:51:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:51:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 00:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:04:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:04:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:05:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:05:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:06:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:07:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:07:34 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:07:34 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:07:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:07:38 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:07:38 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:07:39 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:07:39 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:07:39 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:07:39 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:07:39 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:07:39 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:07:58 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:07:58 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:09:26 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:09:26 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:09:27 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:09:27 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:09:27 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:09:27 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:10:23 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:10:23 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:10:46 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:10:46 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 01:10:47 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:10:47 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(100): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:18:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:18:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:19:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:19:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:19:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:19:41 --> Comparing dates - DB: 2007-04-22 | Input: 2007-04-22
+INFO - 2025-08-07 01:19:41 --> Formatted dates - DB: 2007-04-22 | Input: 2007-04-22
+ERROR - 2025-08-07 01:19:41 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(111): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:19:41 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(111): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:22:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:22:13 --> Comparing dates - DB: 2007-04-22 | Input: 2007-04-22
+INFO - 2025-08-07 01:22:13 --> Formatted dates - DB: 2007-04-22 | Input: 2007-04-22
+ERROR - 2025-08-07 01:22:14 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(111): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:22:14 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(111): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:22:15 --> Comparing dates - DB: 2007-04-22 | Input: 2007-04-22
+INFO - 2025-08-07 01:22:15 --> Formatted dates - DB: 2007-04-22 | Input: 2007-04-22
+ERROR - 2025-08-07 01:22:15 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(111): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:22:15 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(111): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:22:15 --> Comparing dates - DB: 2007-04-22 | Input: 2007-04-22
+INFO - 2025-08-07 01:22:15 --> Formatted dates - DB: 2007-04-22 | Input: 2007-04-22
+ERROR - 2025-08-07 01:22:16 --> mysqli_sql_exception: Unknown column 'created_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(111): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:22:16 --> Unknown column 'created_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(111): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:24:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:25:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:25:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:26:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:26:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:27:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:28:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:31:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:33:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:33:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:33:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:34:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:36:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:36:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:36:52 --> Generate NPM - ID: 3959, Tanggal: 2007-04-22
+DEBUG - 2025-08-07 01:36:52 --> Validating Date: DB [2007-04-22] vs Input [2007-04-22]
+DEBUG - 2025-08-07 01:36:52 --> Formatted DB Date: 2007-04-22 | Formatted Input Date: 2007-04-22
+ERROR - 2025-08-07 01:36:52 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(143): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:36:52 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(143): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:36:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:36:55 --> Generate NPM - ID: 3959, Tanggal: 2007-04-22
+DEBUG - 2025-08-07 01:36:55 --> Validating Date: DB [2007-04-22] vs Input [2007-04-22]
+DEBUG - 2025-08-07 01:36:55 --> Formatted DB Date: 2007-04-22 | Formatted Input Date: 2007-04-22
+ERROR - 2025-08-07 01:36:55 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(143): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:36:55 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(143): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:38:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:38:06 --> Generate NPM - ID: 3959, Tanggal: 2007-04-22
+DEBUG - 2025-08-07 01:38:06 --> Validating Date: DB [2007-04-22] vs Input [2007-04-22]
+DEBUG - 2025-08-07 01:38:06 --> Formatted DB Date: 2007-04-22 | Formatted Input Date: 2007-04-22
+ERROR - 2025-08-07 01:38:06 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(143): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:38:06 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(143): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:42:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:42:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:42:57 --> Generate NPM - ID: 3959, Tanggal: null
+INFO - 2025-08-07 01:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:47:19 --> Generate NPM - ID: 3959, Tanggal: null
+INFO - 2025-08-07 01:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:47:20 --> Generate NPM - ID: 3959, Tanggal: null
+INFO - 2025-08-07 01:47:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:47:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:47:44 --> Generate NPM - ID: 3959, Tanggal: 2007-04-22
+DEBUG - 2025-08-07 01:47:44 --> Query result: {"id":"3959","nisn":"79479311","nik":"1172020000000000","foto":"1754390146_5f768bd4b2b47e98cffb.jpeg","kode_peserta":"251110050244","nomor_kip_k":null,"nama_prodi_terima":"PERJALANAN WISATA","jenjang_prodi_terima":null,"pilihan_terima":null,"alamat":"Keramat  Kota Sabang  Prov. Aceh 23514","tempat_lahir":"Takengon","telepon":"81360000000","nama_ayah":"Nazli","nama_ibu":"Suhaini","npsn":null,"nama":"MAULIZA AZZAHARA","tgl_lahir":"2007-04-22","jenis_kelamin":"","nama_sekolah":"SMKS FARMASI CUT MEUTIA","tipe_sekolah":"SMK","jurusan_asal":"Farmasi","tahun_lulus":"2025","email":"zz.zahara.22407@gmail.com","no_hp":"81360000000","agama":"","created_at":"2025-08-05 04:34:58","updated_at":"2025-08-05 10:35:46","users_id":"36","jurusan_id":"5","prodi_id":"20","tahun_id":"1","kode_prodi":"25754"}
+DEBUG - 2025-08-07 01:47:44 --> Validating Date: DB [2007-04-22] vs Input [2007-04-22]
+DEBUG - 2025-08-07 01:47:44 --> Parsing date: [2007-04-22]
+DEBUG - 2025-08-07 01:47:44 --> Successfully parsed with format [Y-m-d] result: [2007-04-22]
+DEBUG - 2025-08-07 01:47:44 --> Parsing date: [2007-04-22]
+DEBUG - 2025-08-07 01:47:44 --> Successfully parsed with format [Y-m-d] result: [2007-04-22]
+DEBUG - 2025-08-07 01:47:44 --> Formatted DB Date: 2007-04-22 | Formatted Input Date: 2007-04-22
+DEBUG - 2025-08-07 01:47:44 --> Date comparison result: MATCH
+DEBUG - 2025-08-07 01:47:44 --> Date validation result: true
+DEBUG - 2025-08-07 01:47:44 --> Generated NPM: 257541076 untuk mahasiswa: MAULIZA AZZAHARA
+ERROR - 2025-08-07 01:47:44 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(148): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+CRITICAL - 2025-08-07 01:47:44 --> Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `npm` (`mahasiswa_id`, `npm`, `created_at`, `updated_at`) VALUES (:mahasiswa_id:, :npm:, :created_at:, :updated_at:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\MahasiswaDashboard.php(148): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 01:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:51:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:51:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:51:21 --> Input Generate NPM => ID: 3959 | Tanggal: 
+INFO - 2025-08-07 01:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 01:51:25 --> Input Generate NPM => ID: 3959 | Tanggal: 
+INFO - 2025-08-07 02:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-08-07 02:04:48 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\project\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `np...', 0)
+#1 D:\project\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `np...')
+#2 D:\project\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `np...')
+#3 D:\project\absensi-karyawan\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `np...', Array, false)
+#4 D:\project\absensi-karyawan\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\project\absensi-karyawan\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\project\absensi-karyawan\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\project\absensi-karyawan\app\Controllers\MahasiswaDashboard.php(110): CodeIgniter\Model->insert(Array)
+#8 D:\project\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\MahasiswaDashboard->generateNpm()
+#9 D:\project\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MahasiswaDashboard))
+#10 D:\project\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\project\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\project\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\project\\abse...')
+#13 {main}
+INFO - 2025-08-07 02:06:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:07:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:10:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:13:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:13:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:14:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:15:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:15:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-07 02:23:15 --> Invalid file: "admin/kode/prodi_edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/kode/prodi_edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/kode/prodi_edit', [], true)
+ 3 APPPATH\Controllers\AdminProdi.php(51): view('admin/kode/prodi_edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProdi->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProdi))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 02:23:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-07 02:23:46 --> Invalid file: "admin/kode/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/kode/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/kode/edit', [], true)
+ 3 APPPATH\Controllers\AdminProdi.php(51): view('admin/kode/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProdi->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProdi))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 02:24:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-07 02:24:10 --> Invalid file: "admin/prodi/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/prodi/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/prodi/edit', [], true)
+ 3 APPPATH\Controllers\AdminProdi.php(51): view('admin/prodi/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProdi->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProdi))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 02:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-07 02:24:12 --> Invalid file: "admin/prodi/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/prodi/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/prodi/edit', [], true)
+ 3 APPPATH\Controllers\AdminProdi.php(51): view('admin/prodi/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProdi->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProdi))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 02:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-07 02:24:12 --> Invalid file: "admin/prodi/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/prodi/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/prodi/edit', [], true)
+ 3 APPPATH\Controllers\AdminProdi.php(51): view('admin/prodi/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProdi->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProdi))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 02:24:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-08-07 02:24:13 --> Invalid file: "admin/prodi/edit.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/prodi/edit.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('admin/prodi/edit', [], true)
+ 3 APPPATH\Controllers\AdminProdi.php(51): view('admin/prodi/edit', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProdi->edit('1')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProdi))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\project\\absensi-karyawan\\public\\index.php')
+INFO - 2025-08-07 02:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:24:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:24:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:25:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:25:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:46:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:50:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:51:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:51:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:54:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:54:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:54:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:54:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:55:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:57:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:58:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:58:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:58:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:59:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:59:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 02:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:01:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:02:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:02:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:23:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:23:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:23:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:23:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:23:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:24:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:24:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:24:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:26:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:26:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:26:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:27:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:27:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:27:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:27:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:29:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:29:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:29:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:32:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-08-07 03:32:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

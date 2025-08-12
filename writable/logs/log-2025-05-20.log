@@ -1,0 +1,299 @@
+INFO - 2025-05-20 03:33:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-20 03:33:40 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('ariandika', 'ariandika12345')
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('ariandika', 'ariandika12345')
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2025-05-20 03:33:40 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('ariandika', 'ariandika12345')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Downloads\\New folder\\absensi-karyawan\\public\\index.php')
+INFO - 2025-05-20 03:33:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-20 03:34:06 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2025-05-20 03:34:06 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Downloads\\New folder\\absensi-karyawan\\public\\index.php')
+INFO - 2025-05-20 03:34:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-05-20 03:35:01 --> Error connecting to the database: ErrorException: mysqli::real_connect(): Error while reading greeting packet. PID=11932 in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'mysqli::real_co...', 'C:\\Users\\ASUS\\D...', 184)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#11 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#13 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#14 {main}
+
+Next mysqli_sql_exception: MySQL server has gone away in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: MySQL server has gone away in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2025-05-20 03:35:01 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Downloads\\New folder\\absensi-karyawan\\public\\index.php')
+INFO - 2025-05-20 03:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:35:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:35:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-05-20 03:38:31 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 194.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-05-20 03:49:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:50:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 03:58:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:01:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:03:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:04:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:06:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:06:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:08:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:08:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:10:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:13:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:28:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:29:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 04:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:11:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:13:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:13:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:13:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:13:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:25:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:26:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:26:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:32:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:35:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:36:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:37:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:40:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:40:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:42:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:44:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:54:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 06:54:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:00:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:01:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:01:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:01:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:01:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:01:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:01:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:02:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:05:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:08:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:12:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:47:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:48:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 07:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-05-20 09:25:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

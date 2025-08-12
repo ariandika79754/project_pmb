@@ -1,0 +1,371 @@
+INFO - 2025-07-18 00:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:40:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:41:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:41:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:43:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 00:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:22:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:22:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:22:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:22:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:22:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:22:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:26:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-18 01:26:55 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 D:\Berkas Tugas Akhir\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Berkas Tugas Akhir\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\Berkas Tugas Akhir\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 D:\Berkas Tugas Akhir\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#8 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Berkas Tugas Akhir\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Berkas Tugas Akhir\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 D:\Berkas Tugas Akhir\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Berkas Tugas Akhir\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 D:\Berkas Tugas Akhir\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 D:\Berkas Tugas Akhir\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#7 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Berkas Tugas Akhir\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Berkas Tugas Akhir\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas...')
+#12 {main}
+CRITICAL - 2025-07-18 01:26:55 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas Akhir\\absensi-karyawan\\public\\index.php')
+INFO - 2025-07-18 01:29:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-18 01:29:15 --> mysqli_sql_exception: MySQL server has gone away in D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT `users`....', 0)
+#1 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `users`....')
+#2 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `users`....')
+#3 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 D:\Berkas Tugas Akhir\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Berkas Tugas Akhir\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\Berkas Tugas Akhir\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 D:\Berkas Tugas Akhir\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#8 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Berkas Tugas Akhir\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Berkas Tugas Akhir\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas...')
+#13 {main}
+CRITICAL - 2025-07-18 01:29:15 --> MySQL server has gone away
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 2 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 4 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 5 APPPATH\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas Akhir\\absensi-karyawan\\public\\index.php')
+INFO - 2025-07-18 01:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:29:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-18 01:29:25 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 D:\Berkas Tugas Akhir\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Berkas Tugas Akhir\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\Berkas Tugas Akhir\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 D:\Berkas Tugas Akhir\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#8 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Berkas Tugas Akhir\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Berkas Tugas Akhir\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 D:\Berkas Tugas Akhir\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Berkas Tugas Akhir\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 D:\Berkas Tugas Akhir\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 D:\Berkas Tugas Akhir\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#7 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Berkas Tugas Akhir\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Berkas Tugas Akhir\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas...')
+#12 {main}
+CRITICAL - 2025-07-18 01:29:25 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas Akhir\\absensi-karyawan\\public\\index.php')
+INFO - 2025-07-18 01:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-18 01:29:46 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 D:\Berkas Tugas Akhir\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Berkas Tugas Akhir\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 D:\Berkas Tugas Akhir\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#7 D:\Berkas Tugas Akhir\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#8 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#9 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#10 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Berkas Tugas Akhir\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Berkas Tugas Akhir\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 D:\Berkas Tugas Akhir\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Berkas Tugas Akhir\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 D:\Berkas Tugas Akhir\absensi-karyawan\app\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+#6 D:\Berkas Tugas Akhir\absensi-karyawan\app\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+#7 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+#8 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\Berkas Tugas Akhir\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\Berkas Tugas Akhir\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas...')
+#12 {main}
+CRITICAL - 2025-07-18 01:29:46 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.*, `role`.`role`
+FROM `users`
+LEFT JOIN `role` ON `role`.`id` = `users`.`role_id`
+WHERE `username` = :username:
+AND `password` = :password:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\AuthModel.php(27): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\Auth.php(72): App\Models\AuthModel->checkUser('andika', 'pembelajaran')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Auth->checkAuth()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas Akhir\\absensi-karyawan\\public\\index.php')
+INFO - 2025-07-18 01:29:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:29:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:29:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:33:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-18 01:34:53 --> Maximum execution time of 60 seconds exceeded
+in SYSTEMPATH\Debug\Exceptions.php on line 194.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+INFO - 2025-07-18 01:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:48:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-07-18 01:59:20 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#4 D:\Berkas Tugas Akhir\absensi-karyawan\app\Models\Admin\UsersModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\Berkas Tugas Akhir\absensi-karyawan\app\Controllers\AdminUsers.php(20): App\Models\Admin\UsersModel->getAlluser()
+#6 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\AdminUsers->index()
+#7 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminUsers))
+#8 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\Berkas Tugas Akhir\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 D:\Berkas Tugas Akhir\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Berkas Tugas Akhir\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`....', Array, false)
+#3 D:\Berkas Tugas Akhir\absensi-karyawan\app\Models\Admin\UsersModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+#4 D:\Berkas Tugas Akhir\absensi-karyawan\app\Controllers\AdminUsers.php(20): App\Models\Admin\UsersModel->getAlluser()
+#5 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\AdminUsers->index()
+#6 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminUsers))
+#7 D:\Berkas Tugas Akhir\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Berkas Tugas Akhir\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 D:\Berkas Tugas Akhir\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas...')
+#10 {main}
+CRITICAL - 2025-07-18 01:59:20 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT `users`.`id`, `users`.`username`, `users`.`nama`, `role`.`role` as `role`
+FROM `users`
+JOIN `role` ON `users`.`role_id` = `role`.`id`
+WHERE `users`.`role_id` = :users.role_id:', [...], false)
+ 3 APPPATH\Models\Admin\UsersModel.php(27): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\AdminUsers.php(20): App\Models\Admin\UsersModel->getAlluser()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminUsers->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminUsers))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas Akhir\\absensi-karyawan\\public\\index.php')
+INFO - 2025-07-18 01:59:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 01:59:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:00:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:00:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-18 02:00:05 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\page.php on line 126.
+ 1 APPPATH\Views\layout\page.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Berkas Tugas Akhir\\absensi-karyawan\\app\\Views\\layout\\page.php', 126)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Berkas Tugas Akhir\\absensi-karyawan\\app\\Views\\layout\\page.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/page', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/karyawan/dashboard/index', [], true)
+ 6 APPPATH\Controllers\KaryawanDashboard.php(100): view('konten/karyawan/dashboard/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KaryawanDashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KaryawanDashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas Akhir\\absensi-karyawan\\public\\index.php')
+INFO - 2025-07-18 02:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-18 02:00:45 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\page.php on line 126.
+ 1 APPPATH\Views\layout\page.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Berkas Tugas Akhir\\absensi-karyawan\\app\\Views\\layout\\page.php', 126)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Berkas Tugas Akhir\\absensi-karyawan\\app\\Views\\layout\\page.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/page', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/karyawan/dashboard/index', [], true)
+ 6 APPPATH\Controllers\KaryawanDashboard.php(100): view('konten/karyawan/dashboard/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KaryawanDashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KaryawanDashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas Akhir\\absensi-karyawan\\public\\index.php')
+INFO - 2025-07-18 02:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:01:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-07-18 02:01:36 --> Trying to access array offset on value of type null
+in APPPATH\Views\layout\page.php on line 126.
+ 1 APPPATH\Views\layout\page.php(126): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'D:\\Berkas Tugas Akhir\\absensi-karyawan\\app\\Views\\layout\\page.php', 126)
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Berkas Tugas Akhir\\absensi-karyawan\\app\\Views\\layout\\page.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(244): CodeIgniter\View\View->render('layout/page', [], true)
+ 5 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('konten/karyawan/dashboard/index', [], true)
+ 6 APPPATH\Controllers\KaryawanDashboard.php(100): view('konten/karyawan/dashboard/index', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\KaryawanDashboard->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KaryawanDashboard))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Berkas Tugas Akhir\\absensi-karyawan\\public\\index.php')
+INFO - 2025-07-18 02:02:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:02:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:05:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:05:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:06:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:06:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:08:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:08:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:09:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:09:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:10:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:11:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:11:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:11:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:12:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-07-18 02:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

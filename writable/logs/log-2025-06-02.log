@@ -1,0 +1,99 @@
+INFO - 2025-06-02 04:04:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 04:04:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 04:04:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 04:58:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-02 04:58:37 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Models\Admin\UsersModel.php(44): CodeIgniter\BaseModel->first()
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\AdminProfil.php(23): App\Models\Admin\UsersModel->getUsersByUsername('andika')
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\AdminProfil->index()
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProfil))
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\BaseModel.php(662): CodeIgniter\Model->doFirst()
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Models\Admin\UsersModel.php(44): CodeIgniter\BaseModel->first()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\AdminProfil.php(23): App\Models\Admin\UsersModel->getUsersByUsername('andika')
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\AdminProfil->index()
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProfil))
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#12 {main}
+CRITICAL - 2025-06-02 04:58:37 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `username` = :username:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(264): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(662): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Models\Admin\UsersModel.php(44): CodeIgniter\BaseModel->first()
+ 6 APPPATH\Controllers\AdminProfil.php(23): App\Models\Admin\UsersModel->getUsersByUsername('andika')
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminProfil->index()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminProfil))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Downloads\\New folder\\absensi-karyawan\\public\\index.php')
+INFO - 2025-06-02 04:58:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2025-06-02 04:58:47 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('127.0.0.1', 'root', Object(SensitiveParameterValue), 'absensi_karyawa...', 3306, '', 0)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\AdminDashboard.php(16): CodeIgniter\Model->countAllResults()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\AdminDashboard->index()
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboard))
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#3 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+#4 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\app\Controllers\AdminDashboard.php(16): CodeIgniter\Model->countAllResults()
+#5 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(942): App\Controllers\AdminDashboard->index()
+#6 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboard))
+#7 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ASUS\Downloads\New folder\absensi-karyawan\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\D...')
+#10 {main}
+CRITICAL - 2025-06-02 04:58:47 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1699): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `absensi`
+WHERE `status` = :status:', [...], false)
+ 3 SYSTEMPATH\Model.php(599): CodeIgniter\Database\BaseBuilder->countAllResults(true)
+ 4 APPPATH\Controllers\AdminDashboard.php(16): CodeIgniter\Model->countAllResults()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\AdminDashboard->index()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AdminDashboard))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ASUS\\Downloads\\New folder\\absensi-karyawan\\public\\index.php')
+INFO - 2025-06-02 04:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 06:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-06-02 06:59:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
